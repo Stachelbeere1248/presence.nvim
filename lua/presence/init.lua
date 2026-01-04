@@ -810,7 +810,7 @@ function Presence:update_for_buffer(buffer, should_debounce)
     -- Determine image text and asset key
     local name = filename
     local asset_key = "code"
-    local description = filename
+    local description = "other file"
     local file_asset = self.options.file_assets[filename] or self.options.file_assets[extension]
     if file_asset then
         name, asset_key, description = unpack(file_asset)
